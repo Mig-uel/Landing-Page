@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.container {
+  outline: 1px solid red;
+  width: 100%;
+  max-width: 100%;
+}
+.top {
+  background-color: #1f2937;
+  border-bottom: 1px solid #e5e5e5;
+  height: 25em;
+
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  /* outline: 1px solid red; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+.nav-logo {
+  /* outline: 1px solid red; */
+  padding: 0.5em;
+}
+.nav-links {
+  /* outline: 1px solid red; */
+  padding: 0.5em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+.nav-links a {
+  /* outline: 1px solid red; */
+  padding: .5em;
+}
+.top-inner-container {
+  /* outline: 1px solid red; */
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%
+}
+.top-left {
+  /* outline: 1px solid blue; */
+
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-left button {
+  padding: .5em;
+  border: none;
+  color: #fff;
+  background-color: #3882f6;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+}
+.top-right {
+  /* outline: 1px solid red; */
+
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-right img {
+  max-height: 50%;
+  max-width: 50%;
+  min-width: none;
+  min-height: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .top-right img {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: none;
+    min-height: none;
+  }
+  .top-inner-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .top-left {
+    width: 100%;
+    text-align: center;
+  }
+  .top-left button {
+    width: 100%;
+  }
+  .top-right {
+    width: 100%;
+  }
+  .top {
+    height: auto;
+    padding: 1em;
+  }
+}
